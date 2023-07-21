@@ -5,8 +5,7 @@ Vue.component("num-box", {
     template : 
     `
     <div style="display: inline-block;" >
-        <button
-        style = "font-size:40px;" 
+        <button 
         class='btn btn-responsive' 
         
         v-on:click="fillButton"
@@ -19,7 +18,9 @@ Vue.component("num-box", {
 
         :disabled="isFilled || isDisabled"
         
-        >{{ playerFilled }}</button>
+        >
+          <span>{{ playerFilled }}</span>
+        </button>
     </div>
     `,
 

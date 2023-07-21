@@ -1,5 +1,8 @@
 .btn-responsive {
-    @media (max-width: 767px) {
+    min-width: 35px;
+    min-height: 35px;
+
+    @media (min-width: 576px) and (max-width: 767px) {
       width: 75px;
       height: 75px;
     }
@@ -15,6 +18,14 @@
     }
 }
 
+.btn-responsive > span{
+  font-size: 10px;
+
+  @media (min-width: 576px){
+    font-size: 40px;
+  }
+}
+
 h1 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -22,3 +33,12 @@ h1 {
 #display{
   text-align: end;
 }
+
+#display > p{
+  font-size: 20px;
+
+  @media (min-width: 576px){
+    font-size: 40px;
+  }
+}
+
