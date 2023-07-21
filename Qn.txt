@@ -1,0 +1,5 @@
+Exercise 2:
+
+This exercise is in relation to the week 3 live lecture and you can download or clone the code base used in the live lecture from here.
+
+Add a label or paragraph on the top of all the HTML elements (so that it appears on the top of the screen when rendered) that keeps a track of the number of wins, losses, draws registered by each user (both X and O).

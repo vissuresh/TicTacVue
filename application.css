@@ -1,0 +1,25 @@
+.btn-responsive {
+    @media (max-width: 767px) {
+      width: 75px;
+      height: 75px;
+    }
+    
+      @media (min-width: 768px) and (max-width: 1399px) {
+        width: 100px;
+        height: 100px;
+      }
+    
+      @media (min-width: 1400px) {
+        width: 200px;
+        height: 200px;
+    }
+  
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#display{
+  text-align: end;
+}
