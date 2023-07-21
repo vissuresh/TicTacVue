@@ -1,17 +1,17 @@
 .btn-responsive {
     @media (max-width: 767px) {
-      width: 75px;
-      height: 75px;
+      width: 75px !important ;
+      height: 75px !important ;
     }
     
     @media (min-width: 768px) and (max-width: 1399px) {
-      width: 100px;
-      height: 100px;
+      width: 100px !important ;
+      height: 100px !important ;
     }
   
     @media (min-width: 1400px) {
-      width: 200px;
-      height: 200px;
+      width: 200px !important;
+      height: 200px !important;
     }
 
     width: 75px;
