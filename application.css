@@ -1,6 +1,6 @@
 .btn-responsive {
-    min-width: 35px;
-    min-height: 35px;
+    min-width: 70px;
+    min-height: 70px;
 
     @media (min-width: 576px) and (max-width: 767px) {
       width: 75px;
@@ -19,7 +19,7 @@
 }
 
 .btn-responsive > span{
-  font-size: 10px;
+  font-size: 30px;
 
   @media (min-width: 576px){
     font-size: 40px;

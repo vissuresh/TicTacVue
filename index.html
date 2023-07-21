@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week3 - Ex2</title>
+    <title>Tic Tac Vue</title>
 
     <link href="application.css" rel="stylesheet"/>
 
@@ -17,7 +17,7 @@
     <div id="app" class="container">
         <div class="row vh-100 align-items-center" style="min-height: 100vh;"> 
 
-            <div class="col-md-8 col-lg-9">   
+            <div class="col-sm-12 col-md"> <!-- col-md will take 12 columns on medium and larger screens -->
                 <div class="row g-2 mb-2" v-for="i in 3">
                     <div class="col-auto" v-for="j in 3">   
                         <num-box :player="globalCounter" @change-player="toggleCounter(i-1, j-1)" :is-disabled="winner != null"></num-box>
@@ -25,10 +25,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-lg-3 mt-md-0 mt-3" id="display">
-                <p class="mb-5">CLICK COUNTER: {{ clickCount }}</p>
-                <p class="mb-5">{{ displayText }}</p>
-                <p><button class="btn btn-success" @click="newGame">NEW GAME</button></p>
+            <div class="col-sm-12 col-md" id="display"> <!-- col-md will take 12 columns on medium and larger screens -->
+                <p class="mb-sm-0 mb-md-5">CLICK COUNTER: {{ clickCount }}</p> <!-- mb-sm-0 will remove top margin on small screens -->
+                <p class="mb-sm-0 mb-md-5">{{ displayText }}</p> <!-- mb-sm-0 will remove top margin on small screens -->
+                <p class="mb-0"><button class="btn btn-success" @click="newGame">NEW GAME</button></p>
             </div>
         </div>
     </div>
